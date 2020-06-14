@@ -6,9 +6,9 @@ to generate music using a Ruby-like programming language. My primary goal with t
 was to program instruments to "improvise" by pseudo randomly choosing notes that fit over
 the underlying non-diatonic chord changes.   
 
-**Code**  
+**Code Style**  
 - I would like to acknowledge that my coding style is particularly messy, inconsistent,
-and inefficient in a lot of cases in this project. This is due to my complete lack of experience
+and inefficient in a lot of cases in this project. This is due to my lack of experience
 with Ruby and also the fact that my approach was uncertain and full of experimentation.  
 - I also apologize for the lack of documentation in my code. I might return to this project at a later
 date to clean and document the code, but for now this project simply documents my experimentation
@@ -20,10 +20,11 @@ with a new approach to music making.
 - fm synth (chords)  
 - "beep" synth (bass)  
 - drum samples  
+
 All instruments are played with elements of randomness. The soloists (piano and chiplead)
 choose notes from the current chord over two octaves, always with the option of a rest to give
 them a sense of phrasing. The soloist who is not soloing will accompany the soloist using random
-notes from the current chord at given times. The drums choose from set lists of samples randomly at specified times. The drums were a product of extensive experimentation on my end to find what sounds good.
+notes from the current chord at given times. The drums choose from set lists of samples randomly at specified times. The drums are a product of extensive experimentation on my end to find what sounds good.
 The bass is programmed to "walk" over the chord changes and the chords are hard coded to specific chords but are programmed to change at one of three possible time intervals.  
 
 The above description applied to the main improv sections (improv_1.rb and improv_2.rb). The other sections follow different chords and different sets of rules but maintain a heavy reliance on randomness.  
@@ -42,4 +43,4 @@ set :rfpath, "~/path_to_directory/"
 run_file get(:rfpath)+"drum_solo.rb"  
 
 **Streaming**  
-If you want to hear the music without running all the code, feel free to listen on my [Soundcloud](https://soundcloud.com/glorptron/unplanned)
+If you want to hear the music without running all the code, feel free to listen on my [SoundCloud](https://soundcloud.com/glorptron/unplanned)
